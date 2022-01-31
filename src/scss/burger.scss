@@ -1,0 +1,54 @@
+// $logo-color: #00cec9;
+
+// @mixin dark-theme {
+//     $bg-color: #1a2730;
+//     $text-color: #fbfbfb;
+    
+//     background-color: $bg-color;
+//     color: $text-color;
+    
+//     *::selection {
+//         color: #fbfbfb; 
+//         background: #00cec9; 
+//     }
+// }
+
+// @mixin light-theme {
+//     $bg-color: #fbfbfb;
+//     $text-color: #1e272e;
+    
+//     background-color: $bg-color;
+//     color: $text-color;
+    
+//     *::selection {
+//         color: #fbfbfb; 
+//         background: #00cec9; 
+//     }
+// }
+
+.burger-btn {
+	overflow: visible;
+	cursor: pointer;
+	fill: #3ceeb4;
+	
+	&--1,
+	&--2,
+	&--3 {
+		transition: .2s;
+		transform-origin: center center;
+	}
+	
+	&.active {
+
+		.burger-btn--1 {
+			transform: translate(-14px, 10px) rotate(45deg);
+		}
+		.burger-btn--2 {
+			transform: translateX(-20px);
+			opacity: 0;
+		}
+		.burger-btn--3 {
+			transform: translate(-10px, -8px) rotate(-45deg);
+		}
+	}
+}

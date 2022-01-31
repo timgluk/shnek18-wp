@@ -1,0 +1,154 @@
+.header {
+  position: absolute;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  width: 100vw;
+  color: aliceblue;
+  z-index: 3;
+}
+
+.header-wrapper {
+  display: flex;
+  flex-direction: row;
+  max-width: 1280px;
+  width: 100%;
+  justify-content: space-between;
+  align-items: center;
+  font-family: 'Montserrat';
+  padding: 2vw 2vw 0 2vw ;
+}
+
+.navigation {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+
+  -webkit-touch-callout: none;
+	-webkit-user-select: none;
+	-khtml-user-select: none;
+	-moz-user-select: none;
+	-ms-user-select: none;
+	user-select: none;
+}
+
+.list {
+   display: flex;
+   transition: all .5s ease-out;
+}
+
+.list__item {
+  padding-right: 40px;
+  text-transform: uppercase;
+  font-size: 14px;
+  font-weight: 600;
+  cursor: pointer;
+}
+
+.list__item:hover {
+  color: var(--main-color);
+}
+
+.list__item_last {
+  padding-right: 0;
+}
+
+.burger { 
+  position: fixed;
+}
+
+@media (min-width: 768px) and (max-width: 1024px) {
+  .logo__img {
+    width: 150px;
+  }
+
+  .list__item {
+    font-size: 12px;
+  }
+}
+
+@media (min-width: 768px) and (max-width: 1024px) and (orientation: landscape) {
+  .logo__img {
+    width: 150px;
+  }
+
+  .list__item {
+    font-size: 12px;
+  }
+}
+
+@media (min-width: 481px) and (max-width: 767px) {
+
+  .logo__img {
+    width: 150px;
+  }
+
+  .list {
+    position: fixed;
+    top: 0;
+    right: 0;
+    width: 40vw;
+    height: 100vh;
+    visibility: hidden;
+    opacity: 0;
+    transform: translateX(100%);
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+    padding-left: 3vw;
+  }
+
+  .list_active {
+    visibility: visible;
+    background-color: var(--main-color);
+    opacity: 1;
+    transform: none;
+  }
+
+  .list__item {
+    padding: 3vh;
+    font-size: 20px;
+  }
+
+  .burger { 
+    position: static;
+  }
+}
+
+@media (min-width: 320px) and (max-width: 480px) {
+
+  .logo__img {
+    width: 150px;
+  }
+
+  .list {
+    position: fixed;
+    top: 0;
+    right: 0;
+    width: 55vw;
+    height: 100vh;
+    visibility: hidden;
+    opacity: 0;
+    transform: translateX(100%);
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+    padding-left: 3vw;
+  }
+
+  .list_active {
+    visibility: visible;
+    background-color: var(--main-color);
+    opacity: 1;
+    transform: none;
+  }
+
+  .list__item {
+    font-size: 20px;
+    padding: 3vh;
+  }
+
+  .burger { 
+    position: static;
+  }
+}

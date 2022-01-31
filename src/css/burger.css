@@ -1,0 +1,51 @@
+.burger-btn {
+  overflow: visible;
+  /* overflow: hidden; */
+  cursor: pointer;
+  fill: #edfef9;
+}
+.burger-btn--1, .burger-btn--2, .burger-btn--3 {
+  transition: 0.2s;
+  transform-origin: center center;
+}
+.burger-btn.active .burger-btn--1 {
+  transform: translate(-14px, 10px) rotate(45deg);
+}
+.burger-btn.active .burger-btn--2 {
+  transform: translateX(-20px);
+  opacity: 0;
+}
+.burger-btn.active .burger-btn--3 {
+  transform: translate(-10px, -8px) rotate(-45deg);
+}
+
+.burger {
+  visibility: hidden;
+  z-index: 5;
+}
+
+/* @media (min-width: 768px) and (max-width: 1024px) {
+  .burger {
+    visibility: visible;
+  }
+} */
+
+/* @media (min-width: 768px) and (max-width: 1024px) and (orientation: landscape) {
+  .burger {
+    visibility: visible;
+  }
+} */
+
+@media (min-width: 481px) and (max-width: 767px) {
+  .burger {
+    visibility: visible;
+  }
+}
+
+@media (min-width: 320px) and (max-width: 480px) {
+  .burger {
+    visibility: visible;
+  }
+}
+
+/*# sourceMappingURL=burger.css.map */

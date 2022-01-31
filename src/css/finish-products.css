@@ -1,0 +1,9 @@
+.finish-products {
+  display: flex;
+  box-sizing: border-box;
+  max-height: 100vh;
+}
+
+.finish-products__img {
+  width: 100vw;
+}
