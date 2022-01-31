@@ -4,12 +4,14 @@
 @import url(./products.css);
 @import url(./finish-products.css);
 @import url(./burger.css);
+@import url(./about.css);
 /* @import url(./chief-slider.css); */
 @import url(https://fonts.googleapis.com/css?family=Montserrat:100,200,300,regular,500,600,700,800,900);
 
 
 body {
-  --main-color: #0781df;
+  --main-color: #6B9EBD;
+  --active-color: #0781df;
   margin: 0;
   font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
     'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',

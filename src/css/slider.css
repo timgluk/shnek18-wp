@@ -46,6 +46,7 @@
 .slider__title {
   font-size: calc(36px + 9  * ((100vw - 320px) / (1280 - 320)));
   font-weight: 700;
+  color: #fff;
 }
 
 .slider__text {
@@ -61,17 +62,17 @@
   width: 120px;
   height: 40px;
   box-sizing: border-box;
-  border: 1px solid white;
+  /* border: 1px solid white; */
   border-radius: 5px;
+  padding-bottom: 2px;
   color: white;
   text-decoration: none;
-  background-color: transparent;
+  background-color: var(--main-color);
   align-self: center;
 }
 
 .slider__link:hover {
-  background-color: var(--main-color);
-
+  background-color: var(--active-color);
 }
 
 @media (orientation: portrait) {
