@@ -52,7 +52,6 @@
 .slider__text {
   margin-left: 3vw;
   font-size: calc(18px + 7 * ((100vw - 320px) / (1280 - 320)));
-  /* font-size: 25px; */
 }
 
 .slider__link {
@@ -62,7 +61,6 @@
   width: 120px;
   height: 40px;
   box-sizing: border-box;
-  /* border: 1px solid white; */
   border-radius: 5px;
   padding-bottom: 2px;
   color: white;
@@ -86,7 +84,6 @@
     padding: 13vh 2vw 5vw 2vw;
     gap: 2vh;
     box-sizing: border-box;
-    /* padding-top: 13vh; */
   }
 
   .slider__product {

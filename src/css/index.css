@@ -5,9 +5,9 @@
 @import url(./finish-products.css);
 @import url(./burger.css);
 @import url(./about.css);
-/* @import url(./chief-slider.css); */
+@import url(./feedback.css);
+@import url(./footer.css);
 @import url(https://fonts.googleapis.com/css?family=Montserrat:100,200,300,regular,500,600,700,800,900);
-
 
 body {
   --main-color: #6B9EBD;

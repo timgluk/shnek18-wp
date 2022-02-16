@@ -34,10 +34,10 @@
   </header>
   <section class="slider">
     <img class="slider__img"
-    srcset="./src/img/production-853-portrait.jpg  300w,
-    ./src/img/production-900.jpg  900w,
-    ./src/img/production-1200.jpg  1200w,
-    ./src/img/production-1920.jpg 19200w"
+    srcset="./src/img/production-img/production-853-portrait.jpg 300w,
+    ./src/img/production-img/production-900.jpg 900w,
+    ./src/img/production-img/production-1200.jpg 1200w,
+    ./src/img/production-img/production-1920.jpg 1920w"
     alt="станок">
     <div class="silder__wrapper">
       <div class="slider__product">
@@ -73,11 +73,11 @@
     </div>
   </section>
   <section class="products">
-    <img class="slider__img"
-    srcset="./src/img/production-853-portrait.jpg  300w,
-    ./src/img/production-900.jpg  900w,
-    ./src/img/production-1200.jpg  1200w,
-    ./src/img/production-1920.jpg 19200w"
+    <img class="slider__img products__img"
+    srcset="./src/img/production-img/production-853-portrait.jpg 300w,
+    ./src/img/production-img/production-900.jpg 900w,
+    ./src/img/production-img/production-1200.jpg 1200w,
+    ./src/img/production-img/production-1920.jpg 1920w"
     alt="станок">
     <div class="img-grid">
       <div class="subtitle-wrapper">
@@ -95,12 +95,84 @@
       </div>
       <div class="img-wrapper">
         <img class="img-wrapper__img" src="./src/img/d-70.png" alt="станок" width="300px">
+        <!-- <img class="products-products-grid__img" src="./src/img/vitok.jpg" alt="vitok" width="300px"> -->
       </div>
     </div>
-  </section> -->
-  <!-- <section class="finish-products">
-    <img class="finish-products__img" src="./src/img/finished-products.jpg" alt="">
-  </section> -->
+  </section> 
+  <section class="finish-products">
+    <div class="products-grid">
+      <div class="produсts-grid__products-wrapper produсts-grid__products-wrapper_prod1">
+        <img class="products-products-grid__img" src="./src/img/zagotovki-dlya-gibki.png" alt="vitok" width="300px">
+      </div>
+      <div class="produсts-grid__products-wrapper produсts-grid__products-wrapper_prod2">
+        <img class="products-products-grid__img" src="./src/img/vitok.jpg" alt="vitok" width="300px">
+      </div>
+      <div class="produсts-grid__products-wrapper produсts-grid__products-wrapper_prod3">
+        <img class="products-products-grid__img" src="./src/img/vitok.jpg" alt="vitok" width="300px">
+      </div>
+      <div class="produts-grid__title-wrapper">
+        <h2 class="products-grid__title">Готовая продукция</h2>
+        <span class="subtitle-wrapper__underlining"></span>
+      </div>
+    </div>
+  </section>
+  <section class="feedback">
+    <img class="feedback__img"
+    alt="shnek-form"
+    srcset="./src/img/form-1200x800.jpg 1200w,
+    ./src/img/form-700.jpg 700w,
+    ./src/img/form-400.jpg 400w"
+    />
+    <div class="feedback__form-wrapper">
+      <div class="feedback__title-wrapper">
+        <h2 class="feedback__title">Остались вопросы?</h2>
+        <span class="subtitle-wrapper__underlining"></span>
+        <p class="feedback__subtitle">Оставте свои контакты и получите консультацию нашего специалиста</p>
+      </div>
+      <form class="form" action="">
+        <!-- <div class="form__wrapper-name"> -->
+          <!-- <label class="form__label-name" for="name">Имя:</label> -->
+          <input class="form__input-name" id="name" name="name" type="text" placeholder="Имя">
+        <!-- </div> -->
+        <!-- <div class="form__wrapper-tel"> -->
+          <!-- <label class="form__label-tel" for="tel">Телефон:</label> -->
+          <input class="form__input-tel" id="tel" name="tel" type="tel" placeholder="Телефон или e-mail">
+        <!-- </div> -->
+        <!-- <div class="form__wrapper-mail"> -->
+          <!-- <label class="form__label-mail" for="mail">e-mail:</label> -->
+          <!-- <input class="form__input-mail" id="mail" name="mail" type="email" placeholder="e-mail"> -->
+        <!-- </div> -->
+        <!-- <div class="form__wrapper-text"> -->
+          <!-- <label class="form__label-text" for="text">Ваше обращение:</label> -->
+            <!-- <textarea class="form__input-text" id="text" name="text" cols="30" rows="10" placeholder="Ваше обращение"></textarea> -->
+        <!-- </div> -->
+        <input class="form__send" type="submit" value="Отправить">
+      </form>
+    </div>
+  </section>
+  <footer class="footer">
+    <div class="footer__wrapper">
+      <img class="footer__logo" src="./src/img/logo/dintek-machine-logo-250px.png" alt="logo" width="250px">
+      <div class="footer__about-wrapper">
+        <h3 class="footer__title-about">О Нас</h3>
+        <p class="footer__text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Nesciunt, quae voluptas illum quod est doloribus consectetur veniam nemo mollitia animi quos ullam blanditiis ab pariatur hic molestias, odit harum temporibus.</p>
+      </div>
+      <nav class="footer__nav">
+        <ul class="footer__list">
+          <li class="footer__item">главная</li>
+          <li class="footer__item">продукция</li>
+          <li class="footer__item">блог</li>
+          <li class="footer__item">о нас</li>
+          <li class="footer__item">контакты</li>
+        </ul>
+      </nav>
+      <div class="footer__contacts">
+        <h3 class="footer__title-contacts">Контакты</h3>
+        <a href="tel:+7 777 777 77 77" class="footer__link">+7 777 777 77 77</a>
+        <a href="" class="footer__link">e-mail@mail.ee</a>
+      </div>
+    </div>
+  </footer>
 </body>
 <script src="./src/js/header.js"></script>
 <script src="./src/js/burger.js"></script>
