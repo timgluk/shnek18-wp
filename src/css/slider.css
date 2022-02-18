@@ -41,6 +41,8 @@
   box-sizing: border-box;
   overflow: hidden;
   padding: 3vw;
+
+  gap: 10px;
 }
 
 .slider__title {
@@ -73,6 +75,23 @@
   background-color: var(--active-color);
 }
 
+@media (min-width: 320px) and (max-width: 480px) {
+  .slider__title {
+    font-size: 30px;
+    font-weight: 600;
+    color: #fff;
+  }
+
+  .subtitle-wrapper__underlining {
+    margin-top: 20px !important;
+  }
+  
+  .slider__text {
+    margin-left: 3vw;
+    font-size: 18px;
+  }
+}
+
 @media (orientation: portrait) {
   .slider__img {
     height: 100vh;
@@ -81,7 +100,7 @@
 
   .silder__wrapper {
     flex-wrap: wrap;
-    padding: 13vh 2vw 5vw 2vw;
+    padding: 15vh 2vw 5vw 2vw;
     gap: 2vh;
     box-sizing: border-box;
   }
